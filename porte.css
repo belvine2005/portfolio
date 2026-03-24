@@ -281,3 +281,31 @@ footer {
     color: #d63384;
 }
 
+
+/* Responsive */
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column-reverse;
+        text-align: center;
+        height: auto;
+        padding-top: 50px;
+    }
+    .nav-links {
+        display: none; /* Simplification pour mobile */
+    }
+    .social-icons {
+        justify-content: center;
+    }
+    .hero-img .img-container {
+        width: 250px;
+        height: 250px;
+        margin-bottom: 2rem;
+    }
+    main {
+        padding: 3rem 5%;
+    }
+    section {
+        padding: 1.2rem;
+        border-radius: 10px;
+    }
+}
