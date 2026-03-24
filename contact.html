@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | BESSAN Belvine</title>
+    <link rel="stylesheet" href="porte.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo"><span>BESSAN</span> Belvine</div>
+            <ul class="nav-links">
+                <li><a href="porte.html">Accueil</a></li>
+                <li><a href="competences.html">Compétences</a></li>
+                <li><a href="apropos.html">À propos</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="contact">
+            <h2>Me contacter</h2>
+            <form action="contact.php" method="post">
+                <fieldset>
+                    <legend>Contact</legend>
+                    <label for="nom">Nom:</label><br>
+                    <input type="text" id="nom" name="nom" placeholder="BESSAN" required><br>
+                    <label for="prenom">Prénom:</label><br>
+                    <input type="text" id="prenom" name="prenom" placeholder="Belvine Ornella" required><br>
+                    <label for="email">Email:</label><br>
+                    <input type="email" id="email" name="email" placeholder="belvine.bessan@gmail.com" required><br>
+                    <label for="sexe">Sexe:</label><br>
+                    <select name="sexe" id="sexe" required>
+                        <option value="">--Choisissez une option--</option>
+                        <option value="Féminin">Féminin</option>
+                        <option value="Masculin">Masculin</option>
+                    </select><br>
+                    <label for="tel">Téléphone:</label><br>
+                    <input type="tel" id="tel" name="tel" placeholder="01-XX-XX-XX-XX"><br>
+                </fieldset>
+                <button type="submit" class="send">Envoyer le message</button>
+                <button type="reset" class="delete">Effacer le formulaire</button>
+            </form>
+        </section>
+    </main>
+</body>
+</html>
