@@ -291,7 +291,10 @@ footer {
         padding-top: 50px;
     }
     .nav-links {
-        display: none; /* Simplification pour mobile */
+        display: flex; 
+        flex-direction: column; 
+        align-items: center;
+        gap: 10px;
     }
     .social-icons {
         justify-content: center;
